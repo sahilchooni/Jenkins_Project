@@ -32,7 +32,7 @@ pipeline {
       parallel {
         stage('Deploy') {
           steps {
-            input(message: 'Do You want to Deploy??', id: 'OK')
+            input(message: 'Do You want to Deployment??', id: 'OK')
             echo 'To Deploy the application server'
           }
         }
