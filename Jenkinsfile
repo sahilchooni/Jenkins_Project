@@ -18,9 +18,9 @@ pipeline {
 
         stage('Test Log') {
           steps {
-            environment {
-    DockerDirPath = 'C:\\Docker'
-    }
+          environment {
+            DockerDirPath="This is Docker Path"
+          }
             writeFile(file: 'LogFile.txt', text: "This is an JenKins war file path ${JenkisWarPath} and This is Docker Directory Path ${DockerDirPath} ")
           }
         }
