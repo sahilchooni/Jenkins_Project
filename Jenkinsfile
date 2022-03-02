@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'To Test the Application server'
-            echo '"To Get The path of JenkinsWar ${JenkisWarPath}"'
+            echo "To Get The path of JenkinsWar ${JenkisWarPath}"
           }
         }
 
