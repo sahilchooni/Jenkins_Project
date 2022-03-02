@@ -21,7 +21,7 @@ pipeline {
             environment {
     DockerDirPath = 'C:\\Docker'
     }
-            writeFile(file: 'LogFile.txt', text: 'This is an JenKins war file path ${JenkisWarPath} and This is Docker Directory Path ${DockerDirPath} ')
+            writeFile(file: 'LogFile.txt', text: "This is an JenKins war file path ${JenkisWarPath} and This is Docker Directory Path ${DockerDirPath} ")
           }
         }
 
